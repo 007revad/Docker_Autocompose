@@ -1,5 +1,5 @@
 # Docker_Autocompose
-Create .yml files from your docker containers
+Create .yml files from your docker existing containers
 
 The script runs docker-autocompose then moves the .yml files to your specified folder.
 

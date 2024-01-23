@@ -19,7 +19,7 @@ Needs Red5d/docker-autocompose or gerkiz/autocompose installed in docker.
 
 The script can be run with a container name parameter to process only that container. 
 ```
-sudo -i docker-autocompose.sh plex
+sudo -s docker-autocompose.sh plex
 ```
 
 If run with no parameter, or the "all" parameter, it will process all running containers: 

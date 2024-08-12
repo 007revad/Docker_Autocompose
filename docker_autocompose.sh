@@ -8,7 +8,7 @@
 # Or with no parameter, or the "all" parameter, to process all running containers:
 # sudo -s docker-autocompose.sh all
 #
-# https://gist.github.com/007revad
+# https://github.com/007revad/Docker_Autocompose
 # Adapted from: https://www.synoforum.com/threads/docker-autocompose.4644/#post-20341
 #--------------------------------------------------------------------------------------
 # REQUIRED:
@@ -26,11 +26,10 @@ saveto="/volume1/Docker"
 autocompose="red5d/docker-autocompose"
 
 # Check script is running as root (or docker.sock won't run)
-    if [ $( whoami ) != "root" ]; then
-        echo "Script needs to run as root. Aborting."
-        exit
-    fi
-
+if [ $( whoami ) != "root" ]; then
+    echo "Script needs to run as root. Aborting."
+    exit
+fi
 
 # Check our saveto path exists (it saveto is set)
 if [ ! -d "${saveto}" ]; then

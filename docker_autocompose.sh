@@ -13,19 +13,17 @@
 #--------------------------------------------------------------------------------------
 # REQUIRED:
 #
-# Needs Red5d/docker-autocompose or gerkiz/autocompose installed in docker.
-# Red5d/docker-autocompose or gerkiz/autocompose should not be started in docker.
+# Needs Red5d/docker-autocompose installed in docker.
+# Red5d/docker-autocompose should not be started in docker.
 #--------------------------------------------------------------------------------------
-
-# Set autcompose= to to the autocompose container you installed. For example:
-# autocompose="gerkiz/autocompose"
-autocompose="red5d/docker-autocompose"
 
 # Set the path where you want to .yml files saved to. If blank will save in your home.
 saveto="/volume1/Docker"
 
 
 #--------------------------------------------------------------------------------------
+
+autocompose="red5d/docker-autocompose"
 
 # Check script is running as root (or docker.sock won't run)
     if [ $( whoami ) != "root" ]; then

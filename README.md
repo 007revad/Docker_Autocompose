@@ -8,6 +8,7 @@ The script runs docker-autocompose then moves the .yml files to your specified f
 You need to edit line 25 in the script to change saveto= to where you want the .yml files saved to.
 
 Needs [Red5d/docker-autocompose](https://github.com/Red5d/docker-autocompose) installed in docker.
+The script will install Red5d docker-autocopmose if it is not installed.
 
 **Notes:** 
 1. Red5d/docker-autocompose should **not** be started in docker.

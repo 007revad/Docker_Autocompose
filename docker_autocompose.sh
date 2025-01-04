@@ -21,6 +21,11 @@
 saveto="/volume1/Docker"
 
 
+# Set to yes to include hostname in filename.
+# Handy if you have multiple devices that backup to the same location.
+IncludeHostname=yes
+
+
 #--------------------------------------------------------------------------------------
 
 autocompose="red5d/docker-autocompose"
@@ -37,11 +42,17 @@ if [ ! -d "${saveto}" ]; then
     saveto=
 fi 
 
+# Get hostname if IncludeHostname is yes
+if [ "${IncludeHostname}" == "yes" ]; then
+    host="$(hostname)_"
+fi
+
+
 # Create subfolder with date
 if [ -d "${saveto}" ]; then
     Now=$( date '+%Y%m%d')
-    if mkdir -p "${saveto}/${Now}_docker-autocompose"; then
-        path="${saveto}/${Now}_docker-autocompose/"
+    if mkdir -p "${saveto}/${Now}_${host}docker-autocompose"; then
+        path="${saveto}/${Now}_${host}docker-autocompose/"
     fi
 fi
 

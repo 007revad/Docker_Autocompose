@@ -19,11 +19,11 @@ The script will install Red5d docker-autocopmose if it is not installed.
 
 The script can be run with a container name parameter to process only that container. 
 ```
-sudo -s docker-autocompose.sh plex
+sudo -s docker_autocompose.sh plex
 ```
 
 If run with no parameter, or the "all" parameter, it will process all running containers: 
 ```
-sudo -s docker-autocompose.sh
+sudo -s docker_autocompose.sh
 ```
 

@@ -20,7 +20,7 @@
 # Set the path where you want to .yml files saved to. If blank will save in your home.
 saveto="/volume1/Docker"
 
-# Set to yes to include hostname in filename.
+# Set to yes to include hostname in the folder name.
 # Handy if you have multiple devices that backup to the same location.
 IncludeHostname=yes
 

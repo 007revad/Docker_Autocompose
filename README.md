@@ -11,7 +11,8 @@ Needs [Red5d/docker-autocompose](https://github.com/Red5d/docker-autocompose) in
 The script will install Red5d docker-autocopmose if it is not installed.
 
 **Notes:** 
-1. Red5d/docker-autocompose should **not** be started in docker.
+1. You only need the Red5d/docker-autocompose image, so no need to create a container.
+2. Red5d/docker-autocompose should not be started in docker.
 
 ## How to run
 
